@@ -2,6 +2,7 @@ import React from 'react';
 
 import DirectionRow from './DirectionRow';
 import TestBox from './TestBox';
+import Root from './Root';
 import ChildButton from './ChildButton';
 
 export default React.createClass({
@@ -23,6 +24,7 @@ export default React.createClass({
 				<DirectionRow toggleDirection={this.changeDirection} direction={this.state.rowDirection}/>
 				<ChildButton newChild={this.AddChild}/>
 				<TestBox direction={this.state.rowDirection}/>
+				<Root/>
 			</div>
 		);
 	}
