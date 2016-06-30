@@ -2,6 +2,76 @@
 <html>
 <head>
 	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		html {
+			box-sizing: border-box;
+		}
+		*, *:before, *:after {
+			box-sizing: inherit;
+		}
+		body, html, #app {
+			height: 100%;
+			font-family: Verdana, Geneva, sans-serif;
+		}
+
+		/*## layout ##*/
+		.l_layout-builder {
+			background-color: #2a322a;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			display: flex;
+		}
+		.l_properties-column {
+			flex: 0 0 20%;
+			padding: 40px 10px 0 10px;
+			background-color: #6060ba;
+			color: white;
+			box-shadow: none;
+		}
+		.properties-row {
+			display: flex;
+			margin-bottom: 15px;
+		}
+		.space-beetwen {
+			flex: 1 1 auto;
+		}
+		.l_properties-column button {
+			border-radius: 0;
+			padding: 3px;
+			border: none;
+			color: #fff;
+			background-color: #3d054b;
+			border: 1px solid white;
+		}
+
+
+
+		.l_preview-column {
+			flex: 1 0 auto;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			padding: 40px;
+		}
+		.l_preview-column h1{
+			margin-bottom: 20px;
+			color: #6060ba;
+		}
+
+		.root-container {
+			background-color: white;
+			flex: 1 0 auto;
+		}
+
+		/*## styles ##*/
+		.properties-column--title {
+			margin-bottom: 30px;
+		}
+		/*
 		.container {
 		  margin: 0 auto;
 		  display: flex;
@@ -12,7 +82,7 @@
 		}
 		.displayColumn {
 			flex-direction: column;
-		}
+		}*/
 		.box {
 		  width: 100px;
 		  height: 100px;

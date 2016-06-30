@@ -3,28 +3,19 @@ import React from 'react';
 import DirectionRow from './DirectionRow';
 import TestBox from './TestBox';
 import Root from './Root';
-import ChildButton from './ChildButton';
+import ChildsRow from './ChildsRow';
 
 export default React.createClass({
-	getInitialState: function() {
-		return {
-			rowDirection: true,
-			childs: []
-		};
-	},
-	changeDirection: function(e) {
-		this.setState({'rowDirection': !this.state.rowDirection});
-	},
-	AddChild: function(e) {
-		console.log(e);
-	},
 	render: function() {
 		return (
-			<div>
-				<DirectionRow toggleDirection={this.changeDirection} direction={this.state.rowDirection}/>
-				<ChildButton newChild={this.AddChild}/>
-				<TestBox direction={this.state.rowDirection}/>
-				<Root/>
+			<div className="l_properties-column">
+				<h2 className="properties-column--title">Propiedades</h2>
+				
+				<DirectionRow toggleDirection={this.props.toggleDirection} direction={this.props.direction}/>
+				{/*<DirectionRow toggleDirection={this.changeDirection}/>*/}
+				<ChildsRow addChild={this.props.addChild}/>
+				{/*<TestBox direction={this.state.rowDirection}/>
+				<Root/>*/}
 			</div>
 		);
 	}

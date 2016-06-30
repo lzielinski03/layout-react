@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import PropertiesColumn from './components/PropertiesColumn';
+import LayoutBuilder from './components/LayoutBuilder';
 
 ReactDOM.render(
-	<PropertiesColumn/>,
+	<LayoutBuilder/>,
 	document.getElementById('app')
 );

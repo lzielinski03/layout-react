@@ -4,9 +4,9 @@ export default React.createClass({
 	render: function() {
 		return (
 			<div className="properties-row">
-				<label>Direccion</label>
+				<label>Child</label>
 				<span className="space-beetwen"></span>
-				<button onClick={this.props.toggleDirection}>{ this.props.direction }</button>
+				<button onClick={ this.props.addChild }>Add child</button>
 			</div>
 		);
 	}
